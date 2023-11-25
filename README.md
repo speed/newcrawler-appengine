@@ -8,9 +8,6 @@ Goes through the process of creating an Google App Engine using Java and Maven i
 
 How do I, as a developer, start working on the project?
 
-### Install Google Cloud CLI
-1. Install [Google Cloud CLI](https://cloud.google.com/sdk/docs/install-sdk#rpm)
-2. Install [Using Apache Maven and the App Engine Plugin](https://cloud.google.com/appengine/docs/standard/java-gen2/using-maven)
 
 ### Create Google App Engine
 
