@@ -1,0 +1,9 @@
+cron:
+- description: 'scheduling.'
+  url: /_ah/cron/scheduling
+  schedule: every 1 minutes
+  timezone: UTC
+- description: 'Clean up sessions'
+  url: /_ah/sessioncleanup?clear
+  schedule: every 30 minutes
+  timezone: UTC

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+	<app-engine-apis>true</app-engine-apis>
+
+	<listener>
+	  <listener-class>lllllllllllllll.IllIlIIlIIllll</listener-class>
+	</listener>
+	
+	<filter>
+		<filter-name>lllllllllllllll.IlIlIllIlIlIIlIIl</filter-name>
+		<filter-class>lllllllllllllll.IlIlIllIlIlIIlIIl</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>lllllllllllllll.IlIlIllIlIlIIlIIl</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>lllllllllllllll.IllIllllllIlIl</filter-name>
+		<filter-class>lllllllllllllll.IllIllllllIlIl</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>lllllllllllllll.IllIllllllIlIl</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>lllllllllllllll.IlIlllIlIIllllIII</filter-name>
+		<filter-class>lllllllllllllll.IlIlllIlIIllllIII</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>lllllllllllllll.IlIlllIlIIllllIII</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<servlet>
+		<servlet-name>_ah_warmup</servlet-name>
+		<servlet-class>lllllllllllllll.IIIIlIIIlIIlIl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlllIIIlIlllIlI</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlllIIIlIlllIlI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlllIIIlIlllIlI</servlet-name>
+		<url-pattern>/_ah/remote/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlIIlllIIlIIIIl</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIIlllIIlIIIIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIIlllIIlIIIIl</servlet-name>
+		<url-pattern>/_ah/cron/scheduling</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIllIlllllIlllIl</servlet-name>
+		<servlet-class>lllllllllllllll.IlIllIlllllIlllIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIllIlllllIlllIl</servlet-name>
+		<url-pattern>/_ah/queue/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlllIIlllllIlll</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlllIIlllllIlll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlllIIlllllIlll</servlet-name>
+		<url-pattern>/api/url/import</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlIllllllIlIIII</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIllllllIlIIII</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIllllllIlIIII</servlet-name>
+		<url-pattern>/api/url/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIllllIIllIIlllI</servlet-name>
+		<servlet-class>lllllllllllllll.IlIllllIIllIIlllI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIllllIIllIIlllI</servlet-name>
+		<url-pattern>/api/url/fetch</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIllIlIlIIIIIllI</servlet-name>
+		<servlet-class>lllllllllllllll.IlIllIlIlIIIIIllI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIllIlIlIIIIIllI</servlet-name>
+		<url-pattern>/api/data/export</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlIIIlllllllIII</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIIIlllllllIII</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIIIlllllllIII</servlet-name>
+		<url-pattern>/member/api/data/download</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlllllIIlIlIIIl</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlllllIIlIlIIIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlllllIIlIlIIIl</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>lllllllllllllll.IlIlIlIIIlllIIIII</servlet-name>
+        <servlet-class>lllllllllllllll.IlIlIlIIIlllIIIII</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lllllllllllllll.IlIlIlIIIlllIIIII</servlet-name>
+        <url-pattern>/file/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>lllllllllllllll.IlIllIIlIIlIlllll</servlet-name>
+        <servlet-class>lllllllllllllll.IlIllIIlIIlIlllll</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lllllllllllllll.IlIllIIlIIlIlllll</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>lllllllllllllll.IlIlIllllllIIIIIl</servlet-name>
+        <servlet-class>lllllllllllllll.IlIlIllllllIIIIIl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lllllllllllllll.IlIlIllllllIIIIIl</servlet-name>
+        <url-pattern>/error/*</url-pattern>
+    </servlet-mapping>
+    
+    <!-- WEB -->
+    <servlet>
+		<servlet-name>lllllllllllllll.IlIlIIIIIIIIIllIl</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIIIIIIIIIllIl</servlet-class>
+		<init-param>
+			<param-name>gzip_threshold</param-name>
+			<param-value>200</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIIIIIIIIIllIl</servlet-name>
+		<url-pattern>/JSON-RPC/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlIllIllllllIll</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIllIllllllIll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIllIllllllIll</servlet-name>
+		<url-pattern>/member/viewcode</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIllIllIIIllIlII</servlet-name>
+		<servlet-class>lllllllllllllll.IlIllIllIIIllIlII</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIllIllIIIllIlII</servlet-name>
+		<url-pattern>/member/regextest</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIllllIIIIlIIlIl</servlet-name>
+		<servlet-class>lllllllllllllll.IlIllllIIIIlIIlIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIllllIIIIlIIlIl</servlet-name>
+		<url-pattern>/member/newcrawler</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlIlIlIlllIIIll</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIlIlIlllIIIll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIlIlIlllIIIll</servlet-name>
+		<url-pattern>/member/newcrawler/read</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIllIIlIllllIIIl</servlet-name>
+		<servlet-class>lllllllllllllll.IlIllIIlIllllIIIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIllIIlIllllIIIl</servlet-name>
+		<url-pattern>/member/rules/query</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlIlllIIIlIIllI</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIlllIIIlIIllI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIlllIIIlIIllI</servlet-name>
+		<url-pattern>/member/rules/save</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlIIIlIIlllIlII</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIIIlIIlllIlII</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIIIlIIlllIlII</servlet-name>
+		<url-pattern>/i18n</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlllIlllllllIll</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlllIlllllllIll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlllIlllllllIll</servlet-name>
+		<url-pattern>/language</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlIIIIIIlIlIlIl</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIIIIIIlIlIlIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIIIIIIlIlIlIl</servlet-name>
+		<url-pattern>/index.jhtml</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIlIIIlIIlllIlIl</servlet-name>
+		<servlet-class>lllllllllllllll.IlIlIIIlIIlllIlIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIlIIIlIIlllIlIl</servlet-name>
+		<url-pattern>/works</url-pattern>
+	</servlet-mapping>
+    
+	<servlet>
+		<servlet-name>lllllllllllllll.IlIllIIIlIIllllll</servlet-name>
+		<servlet-class>lllllllllllllll.IlIllIIIlIIllllll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IlIllIIIlIIllllll</servlet-name>
+		<url-pattern>/ping</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>_ah_sessioncleanup</servlet-name>
+		<servlet-class>com.google.apphosting.utils.servlet.SessionCleanupServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>_ah_sessioncleanup</servlet-name>
+		<url-pattern>/_ah/sessioncleanup</url-pattern>
+	</servlet-mapping>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>session-cleanup</web-resource-name>
+			<url-pattern>/_ah/sessioncleanup</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	
+	<error-page>
+        <error-code>401</error-code>
+        <location>/error/401</location>
+    </error-page>
+    
+	<welcome-file-list>
+		<welcome-file>index.jhtml</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,23 @@
+runtime: java11
+inbound_services:
+- warmup
+app_engine_apis: True
+auto_id_policy: default
+error_handlers:
+- file: __static__/over_quota.html
+  error_code: over_quota
+handlers:
+- url: (/.*\.html)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+- url: /_ah/sessioncleanup
+  script: unused
+  login: admin
+  secure: optional
+- url: /.*
+  script: unused
+  login: optional
+  secure: optional

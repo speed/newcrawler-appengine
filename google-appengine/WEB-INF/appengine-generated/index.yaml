@@ -1,0 +1,402 @@
+indexes:
+- kind: "Crawler_CrawlUrlTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "status"
+    direction: asc
+- kind: "Crawler_CrawlUrlTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlUrlTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "url"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlUrlTable"
+  properties:
+  - name: "remark"
+    direction: asc
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlUrlTable"
+  properties:
+  - name: "remark"
+    direction: asc
+  - name: "siteId"
+    direction: asc
+  - name: "url"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlUrlTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "status"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlUrlTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "status"
+    direction: asc
+  - name: "createDate"
+    direction: asc
+- kind: "Crawler_CrawlUrlTable"
+  properties:
+  - name: "isInvalid"
+    direction: asc
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: asc
+- kind: "Crawler_CrawlUrlTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "__key__"
+    direction: desc
+- kind: "Crawler_CrawlUrlCacheTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "__key__"
+    direction: desc
+- kind: "Crawler_CrawlUrlCacheTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "count"
+    direction: asc
+- kind: "Crawler_CrawlDataTable"
+  ancestor: yes
+  properties:
+  - name: "crawlDataTables_INTEGER_IDX"
+    direction: asc
+- kind: "Crawler_CrawlDataTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: asc
+- kind: "Crawler_CrawlDataTable"
+  properties:
+  - name: "crawlUrl"
+    direction: asc
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlDataTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "__key__"
+    direction: desc
+- kind: "Crawler_CrawlDataTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+  - name: "__key__"
+    direction: desc
+- kind: "Crawler_AutoDeployFailureTable"
+  properties:
+  - name: "status"
+    direction: asc
+  - name: "__key__"
+    direction: desc
+- kind: "Crawler_AutoDeployFailureTable"
+  properties:
+  - name: "status"
+    direction: asc
+  - name: "createDate"
+    direction: asc
+- kind: "Crawler_BackupTable"
+  properties:
+  - name: "__key__"
+    direction: desc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_BackupTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "__key__"
+    direction: desc
+- kind: "Crawler_BackupTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_UrlCheckResultTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_EmailNoticeTable"
+  properties:
+  - name: "__key__"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlInfoCacheTable"
+  properties:
+  - name: "md5Digest"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlInfoCacheTable"
+  properties:
+  - name: "md5Digest"
+    direction: asc
+  - name: "rulesVerId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "SystemConfigTable"
+  properties:
+  - name: "project"
+    direction: asc
+  - name: "__key__"
+    direction: desc
+- kind: "SystemConfigTable"
+  properties:
+  - name: "name"
+    direction: asc
+  - name: "project"
+    direction: asc
+  - name: "__key__"
+    direction: desc
+- kind: "Crawler_ScheduleTable"
+  properties:
+  - name: "scheduleTime"
+    direction: asc
+  - name: "siteId"
+    direction: asc
+  - name: "taskName"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_ScheduleTable"
+  properties:
+  - name: "status"
+    direction: asc
+  - name: "type"
+    direction: asc
+  - name: "nextTime"
+    direction: asc
+  - name: "lastTime"
+    direction: asc
+- kind: "Crawler_ScheduleTable"
+  properties:
+  - name: "status"
+    direction: asc
+  - name: "nextTime"
+    direction: asc
+  - name: " lastTime"
+    direction: asc
+- kind: "FileChunkEntity"
+  properties:
+  - name: "fileId"
+    direction: asc
+  - name: "index"
+    direction: asc
+- kind: "Crawler_DataRulesVerTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "sortIndex"
+    direction: asc
+- kind: "Crawler_DataRulesVerTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "type"
+    direction: asc
+  - name: "sortIndex"
+    direction: asc
+- kind: "Crawler_StatisticTable"
+  properties:
+  - name: "period"
+    direction: asc
+  - name: "siteId"
+    direction: asc
+  - name: "type"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Spider_CrawlInfoCacheTable"
+  properties:
+  - name: "readInfoDigest"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Spider_FileDownloadStatusTable"
+  properties:
+  - name: "status"
+    direction: asc
+  - name: "updateDate"
+    direction: asc
+- kind: "Spider_FileDownloadStatusTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlDataLogTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlDataLogTable"
+  properties:
+  - name: "isFinished"
+    direction: asc
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlDataLogTable"
+  properties:
+  - name: "isFinished"
+    direction: asc
+  - name: "status"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_DataRulesTable"
+  properties:
+  - name: "rulesVerId"
+    direction: asc
+  - name: "labelType"
+    direction: asc
+  - name: "index"
+    direction: asc
+  - name: "createDate"
+    direction: asc
+- kind: "Crawler_DataRulesTable"
+  properties:
+  - name: "rulesVerId"
+    direction: asc
+  - name: "index"
+    direction: asc
+  - name: "createDate"
+    direction: asc
+- kind: "Crawler_DataRulesTable"
+  properties:
+  - name: "rulesVerId"
+    direction: asc
+  - name: "index"
+    direction: asc
+- kind: "Crawler_DataRulesTable"
+  properties:
+  - name: "rulesVerId"
+    direction: asc
+  - name: "labelType"
+    direction: asc
+  - name: "index"
+    direction: asc
+- kind: "Crawler_DataRulesTable"
+  properties:
+  - name: "labelType"
+    direction: asc
+  - name: "rulesVerId"
+    direction: asc
+  - name: "index"
+    direction: desc
+- kind: "Crawler_PluginCacheTable"
+  properties:
+  - name: "jarUrl"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_CrawlDataDeployTable"
+  properties:
+  - name: "isRetry"
+    direction: asc
+  - name: "createDate"
+    direction: asc
+- kind: "Crawler_FileDownloadStatusTable"
+  properties:
+  - name: "siteId"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "Crawler_SpiderRateTable"
+  properties:
+  - name: "day"
+    direction: asc
+  - name: "timestamp"
+    direction: desc
+- kind: "Crawler_PluginConfigTable"
+  properties:
+  - name: "label"
+    direction: asc
+  - name: "type"
+    direction: asc
+  - name: "sortIndex"
+    direction: asc
+- kind: "Crawler_PluginTable"
+  properties:
+  - name: "label"
+    direction: asc
+  - name: "type"
+    direction: asc
+  - name: "sortIndex"
+    direction: asc
+- kind: "Crawler_PluginTable"
+  properties:
+  - name: "createDate"
+    direction: desc
+  - name: "label"
+    direction: asc
+  - name: "type"
+    direction: asc
+  - name: "sortIndex"
+    direction: asc
+- kind: "Crawler_HttpInterTable"
+  properties:
+  - name: "createDate"
+    direction: desc
+  - name: "type"
+    direction: desc
+- kind: "Crawler_SiteTable"
+  properties:
+  - name: "pin2Sidebar"
+    direction: asc
+  - name: "name"
+    direction: asc
+- kind: "Crawler_SiteTable"
+  properties:
+  - name: "pin2Sidebar"
+    direction: desc
+  - name: "name"
+    direction: asc
+- kind: "Crawler_SiteTable"
+  properties:
+  - name: "pin2Sidebar"
+    direction: asc
+  - name: "createDate"
+    direction: desc
+- kind: "StatisticTable"
+  properties:
+  - name: "statisticType"
+    direction: asc
+  - name: "remark"
+    direction: asc
