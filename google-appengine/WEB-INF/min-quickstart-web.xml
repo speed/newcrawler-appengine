@@ -59,7 +59,7 @@
       
     <listener origin="WebDescriptor(file:///D:/idea-workspace-newcrawler/newcrawler/newcrawler-gae/target/appengine-staging/WEB-INF/web.xml):0">
             
-        <listener-class>lllllllllllllll.IllIlIIlIIllll</listener-class>
+        <listener-class>lllllllllllllll.IlIlIlIIlllllIllll</listener-class>
           
     </listener>
       
@@ -83,9 +83,9 @@
       
     <filter>
             
-        <filter-name>lllllllllllllll.IllIllllllIlIl</filter-name>
+        <filter-name>lllllllllllllll.IlIlIIIllIllIIlIll</filter-name>
             
-        <filter-class origin="WebDescriptor(file:///D:/idea-workspace-newcrawler/newcrawler/newcrawler-gae/target/appengine-staging/WEB-INF/web.xml):3">lllllllllllllll.IllIllllllIlIl</filter-class>
+        <filter-class origin="WebDescriptor(file:///D:/idea-workspace-newcrawler/newcrawler/newcrawler-gae/target/appengine-staging/WEB-INF/web.xml):3">lllllllllllllll.IlIlIIIllIllIIlIll</filter-class>
             
         <async-supported>false</async-supported>
           
@@ -111,7 +111,7 @@
       
     <filter-mapping>
             
-        <filter-name>lllllllllllllll.IllIllllllIlIl</filter-name>
+        <filter-name>lllllllllllllll.IlIlIIIllIllIIlIll</filter-name>
             
         <url-pattern>/*</url-pattern>
           

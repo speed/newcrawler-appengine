@@ -480,8 +480,8 @@ input[type=checkbox].form-error,input[type=password].form-error,input[type=text]
 						</div>
 						
 						<div id="captcha-DIV" style="display:none;">
-							<input name="uresponse" id="uresponse" class=""
-								type="text" placeholder="驗證碼" style="width:313px;height:28px;line-height:28px" maxlength="30">
+							<input name="challenge" id="challenge" class="" type="hidden" maxlength="30">
+							<input name="uresponse" id="uresponse" class="" type="text" placeholder="驗證碼" style="width:313px;height:28px;line-height:28px" maxlength="30">
 							<img id="opencaptcha"   alt="驗證碼圖片"/>
 							<a href="javascript:void(0);" style="cursor: pointer;" onclick="reloadOpencaptcha()">看不清？換壹張</a>
 						</div>
@@ -573,7 +573,7 @@ input[type=checkbox].form-error,input[type=password].form-error,input[type=text]
 						if (data["code"]=="1") {
 							document.getElementById("captcha-DIV").style.display="block";
 							document.getElementById("opencaptcha").src=getCaptchaUrl+data["image"];
-							
+							document.getElementById('challenge').value=data["challenge"];
 							return;
 						}
 					});
@@ -598,6 +598,7 @@ input[type=checkbox].form-error,input[type=password].form-error,input[type=text]
 					var data=eval("("+result+")");
 					if (data["code"]=="1") {
 						document.getElementById("opencaptcha").src=getCaptchaUrl+data["image"];
+						document.getElementById('challenge').value=data["challenge"];
 						return;
 					}
 				});
@@ -641,7 +642,7 @@ input[type=checkbox].form-error,input[type=password].form-error,input[type=text]
 					document.getElementById('password').focus();
 					return;
 				}
-				var challenge=null;
+				var challenge=document.getElementById("challenge").value;
 				var uresponse=null;
 				if(document.getElementById("captcha-DIV").style.display=="block"){
 					uresponse=document.getElementById("uresponse").value;
@@ -676,10 +677,12 @@ input[type=checkbox].form-error,input[type=password].form-error,input[type=text]
 						
 						document.getElementById("captcha-DIV").style.display="block";
 						document.getElementById("opencaptcha").src=getCaptchaUrl+data["image"];
+						document.getElementById('challenge').value=data["challenge"];
 						return;
 					}
 					if (data["code"]=="3" || data["code"]=="4") {
 						document.getElementById("opencaptcha").src=getCaptchaUrl+data["image"];
+						document.getElementById('challenge').value=data["challenge"];
 					}
 					message("fade", data["message"], 2000);
 					document.getElementById('loading').style.display="none";
